@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsIntro</title>
+    <title>Rails Intro 999</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,19 @@
   </head>
 
   <body>
+    <div>
+      <ul>
+        <li>
+          <%= link_to 'Home' , root_path, style: "text-decoration: underline;" %>
+        </li>
+        <li>
+          <%= link_to 'About Us' , about_path, style: "text-decoration: underline;" %>
+        </li>
+        <li>
+          <%= link_to 'Contact Us' , contact_path, style: "text-decoration: underline;" %>
+        </li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>

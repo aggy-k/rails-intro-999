@@ -1,0 +1,14 @@
+<h1>Contact page</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @students.each do |student|  %>
+    <li>
+      <%= student %>
+    </li>
+  <% end -%>
+</ul>
